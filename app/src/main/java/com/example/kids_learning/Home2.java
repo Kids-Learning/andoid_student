@@ -12,6 +12,7 @@ public class Home2 extends AppCompatActivity implements View.OnClickListener {
     Button button1;
     Button button2;
     Button bt_num;
+    Button imagepuzzle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +21,11 @@ public class Home2 extends AppCompatActivity implements View.OnClickListener {
         viewprofile=(Button)findViewById(R.id.viewprofile);
         button1=(Button)findViewById(R.id.button1);
         bt_num=(Button)findViewById(R.id.button2);
+        imagepuzzle=(Button)findViewById(R.id.imagepuzzle);
         button1.setOnClickListener(this);
         viewprofile.setOnClickListener(this);
         bt_num.setOnClickListener(this);
+        imagepuzzle.setOnClickListener(this);
 
 
 
@@ -35,6 +38,9 @@ public class Home2 extends AppCompatActivity implements View.OnClickListener {
         startActivity(vp);}
         else if(view==bt_num){
             Intent vp=new Intent(getApplicationContext(),ViewNumericalProblem.class);
+            startActivity(vp);}
+        else if(view==imagepuzzle){
+            Intent vp=new Intent(getApplicationContext(),viewimagepuzzle.class);
             startActivity(vp);}
         else {
             Intent vp=new Intent(getApplicationContext(),ViewMaterials.class);
