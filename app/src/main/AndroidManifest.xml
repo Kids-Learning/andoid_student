@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kids_Learning"
         android:usesCleartextTraffic="true">
-        <activity android:name=".viewimagepuzzle"></activity>
+        <activity android:name=".viewwords"></activity>
+        <activity android:name=".viewexam" />
+        <activity android:name=".viewimagepuzzle" />
         <activity android:name=".Viewquestions" />
         <activity android:name=".ViewNumericalProblem" />
         <activity android:name=".ViewMaterials" />
@@ -27,7 +29,7 @@
         <activity android:name=".numerical_answer" />
         <activity android:name=".ViewStudent" />
         <activity android:name=".Login" />
-        <activity android:name=".Puzzle_attend"/>
+        <activity android:name=".Puzzle_attend" />
         <activity android:name=".Setip">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
