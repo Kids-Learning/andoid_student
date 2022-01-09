@@ -43,7 +43,14 @@ public class numerical_answer extends AppCompatActivity implements View.OnClickL
         String svalue="";
         TextView textView;
 
-        @Override
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent ln=new Intent(getApplicationContext(),HomePage.class);
+        startActivity(ln);
+    }
+
+    @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_numerical_answer);

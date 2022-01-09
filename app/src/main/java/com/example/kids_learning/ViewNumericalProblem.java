@@ -32,6 +32,13 @@ public class ViewNumericalProblem extends AppCompatActivity implements AdapterVi
     String []num_id,question,answer;
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent ln=new Intent(getApplicationContext(),HomePage.class);
+        startActivity(ln);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_numerical_problem);

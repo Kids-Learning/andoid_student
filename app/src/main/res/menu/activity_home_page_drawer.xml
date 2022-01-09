@@ -5,16 +5,42 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/nav_View_Profile"
+            android:icon="@drawable/viewprofile"
             android:title="View Profile" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_View_Materials"
+            android:icon="@drawable/materials"
+            android:title="View Materials" />
+        <item
+            android:id="@+id/nav_NumericalProblem"
+            android:icon="@drawable/numerical"
+            android:title="View Numerical Problem" />
+        <item
+            android:id="@+id/nav_Image_Puzzle"
+            android:icon="@drawable/puzzle"
+            android:title="View Image Puzzle" />
+        <item
+            android:id="@+id/nav_Exam"
+            android:icon="@drawable/exam"
+            android:title="View  Attend Exam" />
+        <item
+            android:id="@+id/nav_Quiz"
+            android:icon="@drawable/quiz"
+            android:title="Attend Quiz" />
+        <item
+            android:id="@+id/nav_Work"
+            android:icon="@drawable/work"
+            android:title="View and Upload Works" />
+        <item
+            android:id="@+id/nav_rhymes"
+            android:icon="@drawable/rhymes"
+            android:title="Listen Rhymes" />
+        <item
+            android:id="@+id/nav_write"
+            android:icon="@drawable/rhymes"
+            android:title="Write" />
+
+
     </group>
 </menu>

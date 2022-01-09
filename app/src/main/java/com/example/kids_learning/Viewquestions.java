@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,14 +39,21 @@ public class Viewquestions extends AppCompatActivity {
     String[] qn,op_a,op_b,op_c,op_d,ans;
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent ln=new Intent(getApplicationContext(),HomePage.class);
+        startActivity(ln);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewquestions);
-        question=(TextView) findViewById(R.id.question);
-        radioButton=(RadioButton) findViewById(R.id.radioButton);
-        radioButton2=(RadioButton) findViewById(R.id.radioButton2);
-        radioButton3=(RadioButton) findViewById(R.id.radioButton3);
-        radioButton4=(RadioButton) findViewById(R.id.radioButton4);
+        question=(TextView) findViewById(R.id.questionq);
+        radioButton=(RadioButton) findViewById(R.id.radioButtonq);
+        radioButton2=(RadioButton) findViewById(R.id.radioButton2q);
+        radioButton3=(RadioButton) findViewById(R.id.radioButton3q);
+        radioButton4=(RadioButton) findViewById(R.id.radioButton4q);
         prev=(Button) findViewById(R.id.button7);
         nxt=(Button) findViewById(R.id.button6);
         ext=(Button) findViewById(R.id.button5);

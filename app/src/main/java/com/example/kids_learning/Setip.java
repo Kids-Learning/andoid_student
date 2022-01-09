@@ -9,10 +9,11 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class Setip extends AppCompatActivity implements View.OnClickListener {
     EditText setip;
-    Button go;
+    ImageView go;
 
 
     @Override
@@ -20,7 +21,7 @@ public class Setip extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setip);
         setip=(EditText)findViewById(R.id.setip);
-        go=(Button)findViewById(R.id.go);
+        go=(ImageView) findViewById(R.id.imageView5);
         go.setOnClickListener(this);
 
     }
@@ -29,11 +30,17 @@ public class Setip extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
 
         String ip=setip.getText().toString();
-        SharedPreferences sh= PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        SharedPreferences.Editor ed=sh.edit();
-        ed.putString("ip",ip);
-        ed.commit();
-        Intent ii=new Intent(getApplicationContext(),Login.class);
-        startActivity(ii);
+        if(ip.length()==0)
+        {
+            setip.setError("Please Set Your IP");
+        }
+        else {
+            SharedPreferences sh = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+            SharedPreferences.Editor ed = sh.edit();
+            ed.putString("ip", ip);
+            ed.commit();
+            Intent ii = new Intent(getApplicationContext(), Login.class);
+            startActivity(ii);
+        }
     }
 }

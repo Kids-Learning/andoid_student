@@ -25,9 +25,18 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class viewimagepuzzle extends AppCompatActivity implements AdapterView.OnItemClickListener {
     String []puz_id,puzzle,image,time;
     ListView ff;
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent ln=new Intent(getApplicationContext(),HomePage.class);
+        startActivity(ln);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

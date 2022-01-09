@@ -30,6 +30,7 @@ public class CustomViewImagePuazzle extends BaseAdapter {
 
     }
 
+
     @Override
     public int getCount() {
         return puz_id.length;

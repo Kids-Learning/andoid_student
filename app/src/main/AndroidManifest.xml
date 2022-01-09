@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kids_learning">
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kids_Learning"
         android:usesCleartextTraffic="true">
-        <activity android:name=".viewwords"></activity>
+        <activity
+            android:name=".UploadWork"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name="custom_work"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".Work"
+            android:exported="false" />
+        <activity android:name=".quiz" />
+        <activity android:name=".wordactivity" />
+        <activity android:name=".viewwords" />
         <activity android:name=".viewexam" />
         <activity android:name=".viewimagepuzzle" />
         <activity android:name=".Viewquestions" />
         <activity android:name=".ViewNumericalProblem" />
         <activity android:name=".ViewMaterials" />
         <activity android:name=".Home2" />
-
+<activity android:name=".Read_rhymes"/>
+        <activity android:name=".Rhymes"/>
         <uses-library android:name="org.apache.http.legacy" />
-
+<activity android:name=".lwritewrite"/>
         <activity
             android:name=".HomePage"
             android:label="@string/title_activity_home_page"
@@ -37,6 +52,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

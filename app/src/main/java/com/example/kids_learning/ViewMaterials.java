@@ -2,6 +2,7 @@ package com.example.kids_learning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -26,6 +27,12 @@ public class ViewMaterials extends AppCompatActivity {
     ListView studymaterials;
     String []subject,file,date,name;
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent ln=new Intent(getApplicationContext(),HomePage.class);
+        startActivity(ln);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

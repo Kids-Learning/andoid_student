@@ -61,6 +61,7 @@ public class CustomViewMaterial extends BaseAdapter {
         TextView subject1=(TextView)gridView.findViewById(R.id.textView3);
         TextView file1=(TextView)gridView.findViewById(R.id.textView4);
         TextView teacher1=(TextView)gridView.findViewById(R.id.textView2);
+        TextView date1=(TextView)gridView.findViewById(R.id.textView15);
         Button download=(Button)gridView.findViewById(R.id.button);
         download.setTag(i);
         download.setOnClickListener(new View.OnClickListener() {
@@ -124,11 +125,13 @@ public class CustomViewMaterial extends BaseAdapter {
         subject1.setTextColor(Color.BLACK);
         file1.setTextColor(Color.BLACK);
         teacher1.setTextColor(Color.BLACK);
+        date1.setTextColor(Color.BLACK);
 
 
         subject1.setText(subject[i]);
         file1.setText(file[i]);
         teacher1.setText(name[i]);
+        date1.setText(date[i]);
 
 
         return gridView;
