@@ -58,9 +58,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             password.setError("Please Enter Password");
         }
         else {
-
 // From and File
             SharedPreferences sh = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
 
             String hu = sh.getString("ip", "");
 

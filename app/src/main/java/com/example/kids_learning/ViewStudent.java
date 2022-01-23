@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,13 +25,14 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ViewStudent extends AppCompatActivity {
+public class ViewStudent extends AppCompatActivity implements View.OnClickListener {
     ImageView img;
     TextView name;
     TextView age;
     TextView gender;
     TextView std;
     TextView phone;
+    TextView backhome;
 
     @Override
     public void onBackPressed() {
@@ -49,6 +51,8 @@ public class ViewStudent extends AppCompatActivity {
         gender=(TextView)findViewById(R.id.gender);
         std=(TextView)findViewById(R.id.std);
         phone=(TextView)findViewById(R.id.phone);
+        backhome=(TextView)findViewById(R.id.backhome);
+        backhome.setOnClickListener(this);
 //  from and file
         SharedPreferences sh= PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
@@ -132,5 +136,11 @@ public class ViewStudent extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent ln=new Intent(getApplicationContext(),HomePage.class);
+        startActivity(ln);
     }
 }

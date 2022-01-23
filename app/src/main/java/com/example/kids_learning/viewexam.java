@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -112,7 +113,7 @@ public class viewexam extends AppCompatActivity {
                 Map<String, String> params = new HashMap<String, String>();
 
 //                String id=sh.getString("uid","");
-//                params.put("uid",id);
+                params.put("lid",sh.getString("lid",""));
 //                params.put("mac",maclis);
 
                 return params;

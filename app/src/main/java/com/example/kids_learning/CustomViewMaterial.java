@@ -62,7 +62,7 @@ public class CustomViewMaterial extends BaseAdapter {
         TextView file1=(TextView)gridView.findViewById(R.id.textView4);
         TextView teacher1=(TextView)gridView.findViewById(R.id.textView2);
         TextView date1=(TextView)gridView.findViewById(R.id.textView15);
-        Button download=(Button)gridView.findViewById(R.id.button);
+        Button download=(Button)gridView.findViewById(R.id.button36);
         download.setTag(i);
         download.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -2,6 +2,7 @@ package com.example.kids_learning;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -225,10 +226,24 @@ public class WritingViewnew extends View {
 
 
                         if (code==(unicode[lwritewrite.i-1])) {
+
+                            Toast.makeText(con, "Success", Toast.LENGTH_LONG).show();
+
                             lwritewrite.mark = lwritewrite.mark + 10;
+
+                            Intent intent=new Intent(con, ActivityPopup.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            con.startActivity(intent);
+
                             //Toast.makeText(con, lwritewrite.mark+"_-", Toast.LENGTH_SHORT).show();
                         }
+                        else{
+                            Toast.makeText(con, "Fail", Toast.LENGTH_LONG).show();
+                            Intent intent=new Intent(con, CancelPopup.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            con.startActivity(intent);
 
+                        }
 
                         //Toast.makeText(con, "......"+unicode[lwritewrite.i-1]+"....."+code+"....", Toast.LENGTH_SHORT).show();
 
@@ -252,9 +267,12 @@ public class WritingViewnew extends View {
 
             @Override
             public Map<String, String> getParams() {
-
+                SharedPreferences sh = PreferenceManager.getDefaultSharedPreferences(con);
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("image", attach);
+                String id=sh.getString("lid","");
+                params.put("lid",id);
+                params.put("charcode",lwritewrite.unicode[lwritewrite.i-1]+"");
 
                 return (params);
 

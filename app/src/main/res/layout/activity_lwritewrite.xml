@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bg12"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".lwritewrite">
 
@@ -26,16 +26,18 @@
 
     <TextView
         android:id="@+id/letswritewrite"
-        android:layout_width="85dp"
-        android:layout_height="28dp"
+        android:layout_width="248dp"
+        android:layout_height="71dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="LETS WRITE"
+        android:textColor="#000000"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.011" />
@@ -49,12 +51,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="WRITE"
+        android:textColor="#000000"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.083" />
 
     <Button
         android:id="@+id/writeDone"
@@ -116,6 +120,7 @@
         android:layout_marginBottom="8dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/qst"
+        android:textColor="#000000"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="@+id/writeDone"
         app:layout_constraintEnd_toEndOf="parent"

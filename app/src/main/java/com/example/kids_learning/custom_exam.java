@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class custom_exam extends BaseAdapter {
     private final Context context;
@@ -64,7 +62,27 @@ public class custom_exam extends BaseAdapter {
         TextView tv_time=(TextView)gridView.findViewById(R.id.textView4);
         TextView tv_teacher=(TextView)gridView.findViewById(R.id.textView8);
         Button attend_exam=(Button)gridView.findViewById(R.id.button2);
-        Button view_result=(Button)gridView.findViewById(R.id.button);
+////        Button view_result=(Button)gridView.findViewById(R.id.button36);
+//        view_result.setTag(i);
+//        view_result.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                int pos=(int)view.getTag();
+//
+//                SharedPreferences sh= PreferenceManager.getDefaultSharedPreferences(context);
+//                SharedPreferences.Editor ed=sh.edit();
+//                ed.putString("examid", ex_id[pos]);
+//                ed.putString("count", "0");
+//                ed.putString("mark", "0");
+//                ed.commit();
+//
+//                Intent intent=new Intent(context, ViewResult.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                context.startActivity(intent);
+//
+//            }
+//        });
         attend_exam.setTag(i);
         attend_exam.setOnClickListener(new View.OnClickListener() {
             @Override

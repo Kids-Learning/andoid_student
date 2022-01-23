@@ -10,25 +10,39 @@
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18243243243243243" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/drawable-v24/profile_back_button.xml" value="0.1" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/drawable-v24/profile_bk.xml" value="0.1" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/drawable/ic_bottom_welcome.xml" value="0.19212962962962962" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/drawable/ic_illustration_welcome.xml" value="0.19212962962962962" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18243243243243243" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/drawable/side_nav_bar.xml" value="0.18243243243243243" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_cancel_popup.xml" value="0.1" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_custom_word.xml" value="0.15" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_customwork.xml" value="0.17297297297297298" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_draw_image.xml" value="0.33" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_home2.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_lwritewrite.xml" value="0.1" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_main.xml" value="0.16846846846846847" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_numerical_answer.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_object_view.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_popup.xml" value="0.1" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_puzzle_attend.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_quiz.xml" value="0.16846846846846847" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_read_rhymes.xml" value="0.16846846846846847" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_result.xml" value="0.17297297297297298" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_rhymes.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_setip.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_story_read.xml" value="0.16846846846846847" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_storytime.xml" value="0.16846846846846847" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_upload_work.xml" value="0.17297297297297298" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_view_exam_result.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_view_materials.xml" value="0.17297297297297298" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_view_numerical_problem.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_view_result.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_view_student.xml" value="0.18" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_viewexam.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_viewimagepuzzle.xml" value="0.1" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_viewquestions.xml" value="0.22" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_viewwords.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_wordactivity.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/activity_work.xml" value="0.17297297297297298" />
@@ -39,12 +53,19 @@
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/custom_grid2.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/custom_word.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/custom_work.xml" value="0.22" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/customexam.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/customexamresult.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/customresult.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/customviewobject.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/customviewpuzzle.xml" value="0.16846846846846847" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/exam.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/fragment_gallery.xml" value="0.16846846846846847" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/fragment_slideshow.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/nav_header_home_page.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/layout/viewmaterials.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/menu/home_page.xml" value="0.16846846846846847" />
+        <entry key="..\:/Users/user/StudioProjects/Kids_Learning/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19212962962962962" />
       </map>
     </option>
   </component>

@@ -26,6 +26,12 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     private ActivityHomePageBinding binding;
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(getApplicationContext(),Login.class));
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -101,9 +107,22 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         } else if (id == R.id.nav_write){
             Intent i = new Intent(getApplicationContext(),lwritewrite.class);
             startActivity(i);
+        } else if (id == R.id.nav_draw){
+            Intent i = new Intent(getApplicationContext(),DrawImage.class);
+            startActivity(i);
+        } else if (id == R.id.nav_viewresult){
+            Intent i = new Intent(getApplicationContext(),ViewExamResult.class);
+            startActivity(i);
+        } else if (id == R.id.nav_word){
+            Intent i = new Intent(getApplicationContext(),viewwords.class);
+            startActivity(i);
+        } else if (id == R.id.nav_object){
+            Intent i = new Intent(getApplicationContext(),ObjectView.class);
+            startActivity(i);
         } else if (id == R.id.nav_rhymes){
             Intent i = new Intent(getApplicationContext(),Rhymes.class);
             startActivity(i);
+
 
     }
 //        else if(id == R.id.playe){

@@ -110,6 +110,7 @@
                                 android:background="@drawable/profile_bk" />
 
                             <TextView
+                                android:id="@+id/backhome"
                                 style="@style/profileStyledBackButton"
                                 android:text="Back to\nHome" />
                         </RelativeLayout>

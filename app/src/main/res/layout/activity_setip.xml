@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/obimage"
         android:layout_width="243dp"
         android:layout_height="318dp"
         android:layout_marginStart="8dp"
@@ -74,7 +74,7 @@
         android:textSize="40px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/obimage" />
 
     <ImageView
         android:id="@+id/imageView5"

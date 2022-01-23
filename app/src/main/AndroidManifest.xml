@@ -1,26 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kids_learning">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kids_Learning"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".UploadWork"
+            android:name=".CancelPopup"
+            android:exported="false"
+            android:theme="@style/Base.Theme.AppCompat.Dialog"/>
+        <activity
+            android:name=".ActivityPopup"
+            android:exported="false"
+            android:theme="@style/Base.Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".ObjectView"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name="custom_work"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".ViewExamResult"
+            android:exported="false" />
+        <activity
+            android:name=".ViewResult"
+            android:exported="false" />
+        <activity
+            android:name=".DrawImage"
+            android:exported="false" />
+        <activity
+            android:name=".UploadWork"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="custom_work" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".Work"
             android:exported="false" />
@@ -33,10 +57,14 @@
         <activity android:name=".ViewNumericalProblem" />
         <activity android:name=".ViewMaterials" />
         <activity android:name=".Home2" />
-<activity android:name=".Read_rhymes"/>
-        <activity android:name=".Rhymes"/>
-        <uses-library android:name="org.apache.http.legacy" />
-<activity android:name=".lwritewrite"/>
+        <activity android:name=".Read_rhymes" />
+        <activity android:name=".Rhymes" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".lwritewrite" />
         <activity
             android:name=".HomePage"
             android:label="@string/title_activity_home_page"
@@ -52,7 +80,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

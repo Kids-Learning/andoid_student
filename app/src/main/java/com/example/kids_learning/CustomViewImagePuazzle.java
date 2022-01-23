@@ -1,21 +1,16 @@
 package com.example.kids_learning;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.kids_learning.R;
 import com.squareup.picasso.Picasso;
 
 public class CustomViewImagePuazzle extends BaseAdapter {
@@ -63,8 +58,8 @@ public class CustomViewImagePuazzle extends BaseAdapter {
             gridView=(View)view;
 
         }
-        ImageView im=(ImageView)gridView.findViewById(R.id.imageView2);
-        TextView subject1=(TextView)gridView.findViewById(R.id.textView5);
+        ImageView im=(ImageView)gridView.findViewById(R.id.obimage);
+        TextView subject1=(TextView)gridView.findViewById(R.id.obname);
         TextView file1=(TextView)gridView.findViewById(R.id.textView6);
 
 

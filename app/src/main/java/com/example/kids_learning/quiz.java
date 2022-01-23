@@ -172,7 +172,7 @@ public class quiz extends AppCompatActivity {
                 {
                     ed.putString("count", cnt+"");
                     ed.commit();
-                    Intent ij=new Intent(getApplicationContext(), Home2.class);
+                    Intent ij=new Intent(getApplicationContext(), HomePage.class);
                     startActivity(ij);
                 }
                 else{
@@ -233,7 +233,7 @@ public class quiz extends AppCompatActivity {
                     ed.putString("count", "0");
                     ed.commit();
                     Toast.makeText(getApplicationContext(), "Marks : "+ sh.getString("mark", ""), Toast.LENGTH_SHORT).show();
-                    Intent ij= new Intent(getApplicationContext(), Home2.class);
+                    Intent ij= new Intent(getApplicationContext(), HomePage.class);
                     startActivity(ij);
 
                 }
@@ -255,7 +255,7 @@ public class quiz extends AppCompatActivity {
                 ed.putString("count", "0");
                 ed.commit();
                 Toast.makeText(getApplicationContext(), "Exitting", Toast.LENGTH_SHORT).show();
-                Intent ij=new Intent(getApplicationContext(),Home2.class);
+                Intent ij=new Intent(getApplicationContext(),HomePage.class);
                 startActivity(ij);
 
             }

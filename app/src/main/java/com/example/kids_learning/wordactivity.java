@@ -12,7 +12,6 @@ import android.speech.RecognizerIntent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +21,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -47,7 +45,7 @@ public class wordactivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_wordactivity);
         wordbtn=findViewById(R.id.wordbtn);
         wordbtn.setOnClickListener(this);
-        im = (TextView) findViewById(R.id.imageView2);
+        im = (TextView) findViewById(R.id.obimage);
         imbtn = (ImageButton)findViewById(R.id.imageButton2);
         imbtn.setOnClickListener(this);
 

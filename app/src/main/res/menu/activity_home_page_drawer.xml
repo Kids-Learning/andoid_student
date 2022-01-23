@@ -25,6 +25,10 @@
             android:icon="@drawable/exam"
             android:title="View  Attend Exam" />
         <item
+            android:id="@+id/nav_viewresult"
+            android:icon="@drawable/exam"
+            android:title="View  Result" />
+        <item
             android:id="@+id/nav_Quiz"
             android:icon="@drawable/quiz"
             android:title="Attend Quiz" />
@@ -33,6 +37,10 @@
             android:icon="@drawable/work"
             android:title="View and Upload Works" />
         <item
+            android:id="@+id/nav_word"
+            android:icon="@drawable/work"
+            android:title="View word " />
+        <item
             android:id="@+id/nav_rhymes"
             android:icon="@drawable/rhymes"
             android:title="Listen Rhymes" />
@@ -40,6 +48,14 @@
             android:id="@+id/nav_write"
             android:icon="@drawable/rhymes"
             android:title="Write" />
+        <item
+            android:id="@+id/nav_draw"
+            android:icon="@drawable/rhymes"
+            android:title="Draw Image" />
+        <item
+            android:id="@+id/nav_object"
+            android:icon="@drawable/rhymes"
+            android:title="View Object" />
 
 
     </group>
